@@ -1,0 +1,117 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-content {
+  --background: linear-gradient(#fafaff, #c4f5fc) !important;
+}
+
+ion-button {
+  --border-color: #ffffff;
+  --background: #ffffff;
+  --color: #000a36;
+  --border-width: 0;
+  --box-shadow: 0 0 0;
+}
+
+ion-title {
+  text-align: center;
+  color: #000a36;
+  text-decoration: double;
+}
+
+.hangMen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+}
+
+.block {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+ion-modal {
+  --height: auto;
+}
+
+.input-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+ion-input {
+  --background: white;
+  width: 200px; 
+  text-align: left;
+  flex-grow: 1;
+  margin-right: 8px;
+}
+
+.input-button {
+  width: 100px; 
+  margin: 0 auto; 
+  text-align: center;
+  margin-left: 8px;
+}
+
+.secret-word {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.max-errors {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.encrypted-word {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.encrypted-word span {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}

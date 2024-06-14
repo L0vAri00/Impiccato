@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Gioco dell'impiccato</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-button slot="end" (click)="openHints()">
+      <ion-icon name="help-circle-outline" size="large"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img class="hangMen" [src]="errorImages[i]" alt="hangManStart">
+  <br>
+  <div class="max-errors"><p>I tuoi errori:</p> {{ getI() }}</div>
+  <div class="container">
+    <div class="encrypted-word">
+      <span *ngFor="let char of encryptedWordArray">{{ char }}</span>
+    </div>
+  </div>
+  <br>
+  <div class="input-button-container">  
+    <ion-input [(ngModel)]="inputChar" maxlength="1" (keyup.enter)="compareInput()" placeholder="Inserisci la lettera" fill="outline" ></ion-input>
+    <ion-button (click)="compareInput()" class="input-button">Enter</ion-button>
+  </div>
+</ion-content>
